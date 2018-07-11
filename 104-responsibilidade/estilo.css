@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    background-color: green;
+}
+
+#mae{
+    height:500px;
+    border: red solid 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    justify-items: center;
+}
+.filha{
+    border: black solid 1px;
+    width: 200px;
+    font-size: 36px;
+    font-weight: bold ;
+    text-align: center;
+}
+.filha:first-child{
+    align-self: flex-start;
+}
+.filha:last-child{
+    align-self: flex-end;
+}
+
+@media (max-width:600px){
+    body{
+        background-color: blue;
+    }
+}
